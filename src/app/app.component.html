@@ -1,0 +1,33 @@
+<form class="container">
+  <h2>CALCULATOR</h2>
+    <input type="text" class="input form-group" name="enter_field" placeholder="0" [(ngModel)]="txt"><br>
+    <input type="text" class="input form-group" name="ans" placeholder="Answer" [(ngModel)]="answer">
+    <div class="form-group">
+      <button name="b7" (click)="display('7')">7</button>
+      <button name="b8" (click)="display('8')">8</button>
+      <button name="b9" (click)="display('9')">9</button>
+      <button name="opt1" (click)="display('/')">/</button><br>
+  
+      <button name="b4" (click)="display('4')">4</button>
+      <button name="b5" (click)="display('5')">5</button>
+      <button name="b6" (click)="display('6')">6</button>
+      <button name="opt2" (click)="display('*')">*</button><br>
+  
+      <button name="b1" (click)="display('1')">1</button>
+      <button name="b2" (click)="display('2')">2</button>
+      <button name="b3" (click)="display('3')">3</button>
+      <button name="opt3" (click)="display('-')">-</button><br>
+  
+      <button name="b0" (click)="display('0')">0</button>
+      <button name="b." (click)="display('.')">.</button>
+      <button name="opt4" (click)="display('%')">%</button>
+      <button name="opt5" (click)="display('+')">+</button><br> 
+  
+      <button name="clear" (click)="del()" >C</button>
+      <button  (click)="display('00')">00</button>
+      <button (click)="del()">del</button>
+      <button name="ans" (click)="result(txt)">=</button>
+      <br>
+  
+    </div>
+  </form> 
